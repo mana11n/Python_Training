@@ -7,6 +7,9 @@ Data Structures and Algorithms problems.
 - Two Sum
 - Linear Search
 - Palindrome Check
+- VAlid palindrome
+- valid anagram
+- contains duplicate
 
 ## How to Run
 ```bash
