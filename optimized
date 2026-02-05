@@ -1,0 +1,14 @@
+def twoSum(nums, target):
+    ind = 0
+    m = {}
+
+    for val in nums:
+        res = target - val
+        if res in m:
+            return [m[res], ind]
+        m[val] = ind
+        ind += 1
+
+
+n = [2, 7, 11, 15]
+print(twoSum(n, 9))
