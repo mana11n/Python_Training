@@ -1,0 +1,79 @@
+#15. Program to find the minimum of three numbers using a function
+def find_min(a, b, c):
+    return min(a, b, c)
+
+print("Minimum =", find_min(10, 5, 8))
+
+
+
+
+
+
+#16. Program to print a list of squares of numbers between 1 and 30
+def square_list():
+    result = []
+    for i in range(1, 31):
+        result.append(i * i)
+    return result
+
+print(square_list())
+
+
+
+
+#17. Program to access a function inside another function
+def inner():
+    print("This is inner function")
+
+def outer():
+    print("This is outer function")
+    inner()
+
+outer()
+
+
+
+
+#18 Program to count uppercase and lowercase letters in a string
+def count_letters(s):
+    upper = 0
+    lower = 0
+
+    for ch in s:
+        if ch.isupper():
+            upper += 1
+        elif ch.islower():
+            lower += 1
+
+    print("Uppercase letters:", upper)
+    print("Lowercase letters:", lower)
+
+count_letters("Hello World")
+
+
+
+
+
+#19 Program to check whether a string is a pangram
+def is_pangram(s):
+    s = s.lower()
+    for ch in "abcdefghijklmnopqrstuvwxyz":
+        if ch not in s:
+            return False
+    return True
+
+string = "The quick brown fox jumps over the lazy dog"
+print(is_pangram(string))
+
+
+
+
+
+#20 Program to check whether two strings are anagrams
+def is_anagram(s1, s2):
+    s1 = s1.replace(" ", "").lower()
+    s2 = s2.replace(" ", "").lower()
+
+    return sorted(s1) == sorted(s2)
+
+print(is_anagram("listen", "silent"))
